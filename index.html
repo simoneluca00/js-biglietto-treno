@@ -4,12 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    <!-- CSS -->
     <link rel="stylesheet" href="./asset/css/style.css">
+
     <title>Il tuo biglietto</title>
 </head>
 <body>
-    <div id="container-price"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./asset/img/logo-italo.svg" alt="logo-Italo" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-end pe-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
 
+              <li class="nav-item mx-3">
+                <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Offerte
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Sconto Under18</a></li>
+                  <li><a class="dropdown-item" href="#">Sconto Over65</a></li>
+                  <li><a class="dropdown-item" href="#">Milano-Roma fino al -60%</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destinazioni
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Le più gettonate</a></li>
+                  <li><a class="dropdown-item" href="#">Nuove tratte</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Italo GO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Prenota il tuo hotel</a></li>
+                  <li><a class="dropdown-item" href="#">Noleggia auto</a></li>
+                  <li><a class="dropdown-item" href="#">Assicurazione viaggio</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+
+        <div class="sz_banner bg-dark d-flex align-items-center justify-content-center p-2">
+            <h5 class="text-white m-0 me-2">Settimana degli sconti su tutti i biglietti:</h5>
+            <span class="text-white"></span>
+            <span class="text-white">
+                - 40% per gli over 65 &ensp;e&ensp; - 20% per gli under 18!
+            </span>
+        </div>
+
+        <div class="img_city">
+            <img src="./asset/img/napoli.jpg" alt="Napoli img">
+            <div class="sz_overlay">
+                <h1 class="text-white text-center">Calcola velocemente il prezzo del tuo biglietto qui:</h1>
+                <div class="sz_container_price my-3">
+                    <h2 id="calculated_price"></h2>
+                </div>
+                <div class="sz_container_cards">
+                    <div class="sz_card card">
+                        <img src="./asset/img/rm-mi.jpeg" class="card-img-top img-fluid" alt="Roma e Milano img">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Milano-Roma</h4>
+                            <a href="#" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                    <div class="sz_card card">
+                        <img src="./asset/img/nap-bol.jpeg" class="card-img-top img-fluid" alt="Bologna e Napoli img">
+                         <div class="card-body text-center">
+                            <h4 class="card-title">Napoli-Bologna</h4>
+                            <a href="#" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                    <div class="sz_card card">
+                        <img src="./asset/img/na-mi.jpeg" class="card-img-top img-fluid" alt="Napoli e Milano img">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Napoli-Milano</h4>
+                            <a href="#" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div> 
+                </div>
+            
+            </div>
+        </div>
+
+      </main>
+
+    <!-- BOOTSRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   
+    <!-- MAIN.JS  -->
     <script type="text/javascript" src="./asset/js/main.js"></script>
 </body>
 </html> 

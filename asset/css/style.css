@@ -1,0 +1,48 @@
+nav {
+    background-color: #a6160a;
+}
+
+/* BANNER "SETTIMANA SCONTI" */
+.sz_banner span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* IMMAGINE DI SFONDO (MAIN) */
+.img_city {
+    display: grid;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img_city img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    display: block;
+}
+
+.sz_overlay {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 10px;
+}
+
+/* CARDS CON LE DIVERSE TRATTE */
+.sz_container_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.sz_card img {
+    height: 266px;
+}
+
+/* PREZZO DEL BIGLIETTO */
+.sz_container_price {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}

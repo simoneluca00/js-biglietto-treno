@@ -35,15 +35,15 @@ console.log(prezzoAnziani2);
 
 // CONDIZIONI PER LO SCONTO IN BASE ALL'ETA'
 if ( etàPasseggero < 18 ) {
-    document.getElementById("container-price").innerHTML = `Il versamento da effettuare per il tuo viaggio è di: ${prezzoMinorenni2}&euro; ( IVA Compresa ).`;
+    document.getElementById("calculated_price").innerHTML = `Il versamento da effettuare per il tuo viaggio è di: ${prezzoMinorenni2}&euro; ( IVA Compresa ).`;
   }
 
   else if ( etàPasseggero > 65 ) {
-    document.getElementById("container-price").innerHTML = `Il versamento da effettuare per il tuo viaggio è di: ${prezzoAnziani2}&euro; ( IVA Compresa ).`;
+    document.getElementById("calculated_price").innerHTML = `Il versamento da effettuare per il tuo viaggio è di: ${prezzoAnziani2}&euro; ( IVA Compresa ).`;
   }
 
   else {
-    document.getElementById("container-price").innerHTML = `Il versamento da effettuare per il tuo viaggio è di: ${prezzoStandard2}&euro; ( IVA Compresa ).`;
+    document.getElementById("calculated_price").innerHTML = `Il versamento da effettuare per il tuo viaggio è di: ${prezzoStandard2}&euro; ( IVA Compresa ).`;
   }
 
 
