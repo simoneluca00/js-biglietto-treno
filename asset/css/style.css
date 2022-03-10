@@ -33,7 +33,7 @@ nav {
 /* CARDS CON LE DIVERSE TRATTE */
 .sz_container_cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
 }
 
